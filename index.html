@@ -7,13 +7,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="images/logo.png" type="image/png">
 </head>
 <body>
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button">Link 5</a>
+</nav>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="#home" class="w3-bar-item w3-button"><b>東協經濟貿易文化發展協會</b> ASEAN Economic, Trade and Cultural Development Association</a>
+    <a href="#home" class="w3-bar-item w3-button"><img src="images/logo.png" style="height:36px;"> <b>東協經濟貿易文化發展協會</b> ASEAN Economic, Trade and Cultural Development Association</a>
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
       <a href="#projects" class="w3-bar-item w3-button">合作方案</a>
@@ -25,10 +39,10 @@
 
 <!-- Navbar on small screens -->
 <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-<a href="#projects" class="w3-bar-item w3-button">合作方案</a>
-<a href="#about" class="w3-bar-item w3-button">團隊介紹</a>
-<a href="#contact" class="w3-bar-item w3-button">聯絡資訊</a>
-<!-- <a href="#" class="w3-bar-item w3-button">搜尋</a> -->
+  <a href="#projects" class="w3-bar-item w3-button">合作方案</a>
+  <a href="#about" class="w3-bar-item w3-button">團隊介紹</a>
+  <a href="#contact" class="w3-bar-item w3-button">聯絡資訊</a>
+  <!-- <a href="#" class="w3-bar-item w3-button">搜尋</a> -->
 </div>
 
 <!-- Header -->
@@ -38,6 +52,24 @@
     <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-teal w3-opacity-min"><b>東協經濟貿易文化發展協會</b></span> <span class="w3-hide-small w3-text-light-grey"></span></h1>
   </div>
 </header>
+
+<!-- Modal -->
+<!-- <div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>Oh snap! We just showed you a modal..</h4>
+      <h5>Because we can <i class="fa fa-smile-o"></i></h5>
+    </header>
+    <div class="w3-container">
+      <p>Cool huh? Ok, enough teasing around..</p>
+      <p>Go to our <a class="w3-text-teal" href="https://www.w3schools.com/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
+    </div>
+    <footer class="w3-container w3-teal">
+      <p>Modal footer</p>
+    </footer>
+  </div>
+</div> -->
 
 <!-- Page content -->
 <div class="w3-content w3-padding" style="max-width:1564px">
@@ -110,34 +142,34 @@
     </p>
   </div>
 
-  <div class="w3-row-padding w3-grayscale">
+  <div class="w3-row-padding">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <img src="images/team2.jpg" alt="John" style="width:100%">
       <h3>John Doe</h3>
       <p class="w3-opacity">CEO & Founder</p>
       <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-blue w3-block">發送郵件</button></p>
+      <p><button class="w3-button w3-teal w3-block">發送郵件</button></p>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <img src="images/team1.jpg" alt="Jane" style="width:100%">
       <h3>Jane Doe</h3>
       <p class="w3-opacity">Architect</p>
       <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-blue w3-block">發送郵件</button></p>
+      <p><button class="w3-button w3-teal w3-block">發送郵件</button></p>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <img src="images/team3.jpg" alt="Mike" style="width:100%">
       <h3>Mike Ross</h3>
       <p class="w3-opacity">Architect</p>
       <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-blue w3-block">發送郵件</button></p>
+      <p><button class="w3-button w3-teal w3-block">發送郵件</button></p>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <img src="images/team4.jpg" alt="Dan" style="width:100%">
       <h3>Dan Star</h3>
       <p class="w3-opacity">Architect</p>
       <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-blue w3-block">發送郵件</button></p>
+      <p><button class="w3-button w3-teal w3-block">發送郵件</button></p>
     </div>
   </div>
 
@@ -151,7 +183,7 @@
       <input class="w3-input w3-section w3-border" type="text" placeholder="主旨" required name="Subject">
       <input class="w3-input w3-section w3-border" type="text" placeholder="內容" required name="Comment">
       <button class="w3-button w3-teal w3-section" type="submit">
-        <i class="fa fa-paper-plane"></i>發送
+        <i class="fa fa-paper-plane"></i> 發送
       </button>
     </form>
   </div>
